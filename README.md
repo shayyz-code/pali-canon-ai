@@ -2,6 +2,10 @@
 
 This repository contains a Retrieval-Augmented Generation (RAG) AI application that answers questions based on the book **"In the Buddha's Words: An Anthology of Discourses from the Pali Canon"**, compiled by Bhikkhu Bodhi. The application is built using a Go backend, a Python LangChain model, and a Vite-powered React frontend.
 
+## Usage
+
+via [PaliCanon.ai](https://pali-canon-391775181531.asia-southeast1.run.app)
+
 ## Features
 
 - **Interactive Q&A**: Ask questions and receive answers rooted in the Pali Canon.
