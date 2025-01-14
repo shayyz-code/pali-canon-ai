@@ -3,7 +3,7 @@ import { GlobalContext } from "./context/GlobalContext"
 import { motion, AnimatePresence } from "motion/react"
 
 export default function Modal() {
-  const { isModalOpen, setIsModalOpen } = useContext(GlobalContext)
+  const { version, isModalOpen, setIsModalOpen } = useContext(GlobalContext)
 
   return (
     <AnimatePresence>
@@ -25,7 +25,7 @@ export default function Modal() {
             <h1 className="m-0 text-lg font-extrabold">
               PaliCanon.ai
               <span className="bg-primary-color px-2 py-0 rounded-lg text-sm ml-2">
-                v1.0
+                v{version}
               </span>
             </h1>
             <p>

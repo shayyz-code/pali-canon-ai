@@ -8,9 +8,6 @@ RUN go mod download
 RUN go build -o server .
 
 
-# Python
-
-
 # combine
 
 

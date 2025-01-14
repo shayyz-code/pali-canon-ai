@@ -18,6 +18,8 @@ type Config struct {
 
 type Question struct {
 	Query string `json:"query"`
+	Questioner string `json:"questioner"`
+	IsGiveExample bool `json:"is_give_example"`
 }
 
 
@@ -41,7 +43,15 @@ func main() {
 			return c.Status(500).JSON(fiber.Map{"status": "error", "message": "Something's wrong with the input data.", "data": err})
 		}
 
-		cmd := exec.Command("python3", "qa.py", `query_text=` + question.Query)
+		var example string
+		if question.IsGiveExample {
+			example = "explain me with example"
+		} else {
+			example = ""
+		}
+
+		cmd := exec.Command("python3", "qa.py", `query_text=` + question.Query, `questioner=` + question.Questioner, `is_give_example=` + example)
+
 		out, err := cmd.Output()
 
 		if err != nil {

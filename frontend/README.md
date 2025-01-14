@@ -1,1 +1,3 @@
-# PaliCanon.ai
+## PaliCanon.ai
+
+Vite + React Frontend
