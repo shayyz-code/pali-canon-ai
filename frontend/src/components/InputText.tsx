@@ -26,7 +26,7 @@ export default function InputText({
         value={value}
         onChange={(e) => setValue(e.currentTarget.value)}
         placeholder={placeholder}
-        className={`relative px-5 py-3 rounded-xl bg-bg-white dark:bg-bg-dark outline-none hover:bg-white/90 dark:hover:bg-neutral-900/80 transition-colors ease-out duration-300 ${className}`}
+        className={`relative px-5 py-3 rounded-xl bg-bg-white dark:bg-bg-dark outline-none hover:bg-neutral-100/50 dark:hover:bg-neutral-900/80 transition-colors ease-out duration-300 ${className}`}
         onKeyDown={() => setError(null)}
         onKeyUp={(e) => {
           if (e.key === "Enter") handleOnKeyUp()
