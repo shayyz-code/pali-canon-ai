@@ -9,7 +9,6 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -32,9 +31,10 @@ body {
   font-weight: 500;
   font-style: normal;
   margin: 0;
-  padding: 1rem;
+  padding: 1rem 1rem 0rem 1rem;
   min-width: 320px;
-  min-height: 100vh;
+  max-height: -webkit-fill-available;
+  height: 100vh;
   background-color: #141414;
   overflow: hidden;
 }

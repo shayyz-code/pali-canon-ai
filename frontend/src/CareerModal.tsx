@@ -37,7 +37,7 @@ export default function CareerModal() {
             initial={{ opacity: 0, scale: 0.6, x: "-50%", y: "-50%" }}
             animate={{ opacity: 1, scale: 1, x: "-50%", y: "-50%" }}
             exit={{ opacity: 0, scale: 0.6, x: "-50%", y: "-50%" }}
-            className="flex flex-col gap-6 fixed top-1/2 left-1/2 p-8 bg-bg-white dark:bg-bg-dark w-[80%] max-h-[80%] overflow-y-scroll rounded-xl"
+            className="flex flex-col gap-6 fixed top-1/2 left-1/2 p-4 md:p-8 bg-bg-white dark:bg-bg-dark w-[80%] max-h-[80%] overflow-y-scroll rounded-xl"
           >
             <h1 className="m-0 text-lg font-extrabold">
               PaliCanon.ai
@@ -67,7 +67,7 @@ export default function CareerModal() {
               <div>I'm {input === "" ? "a/an ..." : a(input)}</div>
             </div>
 
-            <div className="relative flex items-center p-4 gap-2 bg-bg-white dark:bg-bg-dark rounded-2xl">
+            <div className="relative flex items-center p-2 md:p-4 gap-2 bg-bg-white dark:bg-bg-dark rounded-2xl">
               <InputText
                 className="w-full"
                 value={input}
